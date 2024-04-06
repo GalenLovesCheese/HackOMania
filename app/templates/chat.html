@@ -9,15 +9,13 @@
     />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bulma.css') }}"
     />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico">
-
 </head>
 <body>
 <nav class="navbar is-light is-transparent">
     <div class="navbar-brand">
-        <a class="navbar-item" href="">
+        <a class="navbar-item" href="/">
             <h1 class="title ml-2 mr-5 is-color-grey-darker">WhatTheSite</h1>
         </a>
         <div class="navbar-burger js-burger is-light" data-target="navbarExampleTransparentExample">
@@ -71,7 +69,7 @@
 
 <!--Main content -->
 <main class="is-align-content-center is-light is-transparent">
-    <section class="hero is-light is-background-white is-fullheight" style="align-items: center">
+    <section class="hero is-light is-background-white is-fullheight" style="align-items: center" onload="onLoad()">
         <div class="panel m-6" style="width: 80vw;">
             <p class="panel-heading is-background-grey-dark">Chat with Thomas Wong</p>
 
