@@ -4,9 +4,9 @@ from dotenv import dotenv_values
 config = dotenv_values(".env")
     
 client = AzureOpenAI(
-    api_key=config["AZURE_OPENAI_API_KEY"],  
+    api_key="1ad6ef74a81040188918bbf1ce617bf7",  
     api_version="2024-02-01",
-    azure_endpoint = config["AZURE_OPENAI_ENDPOINT"]
+    azure_endpoint = "https://govtext-ds-experiment.openai.azure.com/"
     )
 
     
@@ -19,15 +19,15 @@ response = client.completions.create(model=deployment_name, prompt=start_phrase,
 print(response)
 print(start_phrase+response.choices[0].text)
 
-# print('Sending a test chat message')
-# response = client.chat.completions.create(
-#     model="gpt-35-turbo", # model = "deployment_name".
-#     messages=[
-#         {"role": "system", "content": "You are a helpful assistant."},
-#         {"role": "user", "content": "How do I build the best ideas for a hackathon?"},
-#         {"role": "assistant", "content": "Identify real problems, leverage new technologies and validate your idea."},
-#         {"role": "user", "content": "What else can I do?"}
-#     ]
-# )
+print('Sending a test chat message')
+response = client.chat.completions.create(
+    model="gpt-35-turbo", # model = "deployment_name".
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "How do I build the best ideas for a hackathon?"},
+        {"role": "assistant", "content": "Identify real problems, leverage new technologies and validate your idea."},
+        {"role": "user", "content": "What else can I do?"}
+    ]
+)
 
-# print(response.choices[0].message.content)
+print(response.choices[0].message.content)
