@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// TODO
+// TODO: Add
 function output(input) {
     let response;
 
@@ -38,6 +38,8 @@ function output(input) {
 
     addChat(input, response);
 }
+
+chatLog = [];
 
 function addChat(input, response) {
     const messagesContainer = document.getElementById("messages");
@@ -54,24 +56,21 @@ function addChat(input, response) {
 `;
 
     messagesContainer.appendChild(userDiv);
-
     let botDiv = document.createElement("div");
-
     botDiv.id = "bot";
 
     botDiv.innerHTML = `
     <article class="message m-2 ml-5  is-primary" >
         <div class="message-body" style="display: flex; align-items: center; background-color: lightgray">
-
             <div class="subtitle is-6" style="flex: 1;" >${response}</div>
             <img src="https://cdn-icons-png.freepik.com/512/64/64572.png?ga=GA1.1.334113719.1712415648&" class="avatar" alt="Bot's profile picture" style="width: 25px; height: 25px; margin-left: 10px;">
-            
         </div>
     </article>
 `;
 
-
     messagesContainer.appendChild(botDiv);
+    chatLog.push({ user: input, bot: response });
+    console.log(chatLog)
 
     messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 }
