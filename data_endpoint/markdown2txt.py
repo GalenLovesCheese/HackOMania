@@ -24,7 +24,7 @@ def convert_repository_to_txt(repo_path, output_file):
 
 if __name__ == "__main__":
     # Specify the path to the repository folder and the output text file
-    repo_path = '/path/to/repository'
+    repo_path = 'C:\Users\user\OneDrive - Ngee Ann Polytechnic\HackOMania\data_endpoint\md_files\moe-chuachukangsec-staging'
     output_file = 'output.txt'
 
     # Convert repository Markdown files to text
