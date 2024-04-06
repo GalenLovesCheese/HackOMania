@@ -15,7 +15,7 @@
 <body>
 <nav class="navbar is-light is-background-grey-lighter">
     <div class="navbar-brand">
-        <a class="navbar-item" href="">
+        <a class="navbar-item" href="/">
             <h1 class="title ml-2 is-color-grey-darker">WhatTheSite</h1>
         </a>
         <div class="navbar-burger js-burger is-light" data-target="navbarExampleTransparentExample">
@@ -28,7 +28,7 @@
 
     <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item" href=""> Home </a>
+            <a class="navbar-item" href="/"> Home </a>
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link"> Docs </a>
                 <div class="navbar-dropdown is-boxed is-background-grey-lighter is-light">
@@ -86,9 +86,9 @@
 </nav>
 
 <!--Main content -->
-<main>
-    <section class="hero is-light is-background-white is-fullheight">
-        <div class="panel m-5 ">
+<main class="is-align-content-center">
+    <section class="hero is-light is-background-white is-fullheight" style="align-items: center">
+        <div class="panel m-6" style="width: 80vw;">
             <p class="panel-heading is-background-grey-dark">Chat with Thomas Wong</p>
 
             <p class="panel-tabs mb-3">
@@ -99,7 +99,7 @@
 
             <div id="container" class="container">
                 <div id="chat" class="chat">
-                    <div id="messages" class="messages"></div>
+                    <div id="messages" class="messages" style="min-height: 65vh; max-height: 65vh; overflow-y: auto;"></div>
                     <div class="control has-icons-right">
                         <label>
                             <input id="messageInput" class="input is-background-grey-dark" placeholder="Message Thomas Wong..."/>
