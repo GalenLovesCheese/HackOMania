@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="is-background-light is-light">
-<nav class="navbar is-light is-background-grey-lighter">
+<nav class="navbar is-light is-background-grey-lighter" style="height:80px;">
     <div class="navbar-brand">
         <a class="navbar-item" href="">
             <h1 class="title ml-2 is-color-grey-darker">WhatTheSite</h1>
@@ -27,9 +27,9 @@
 
     <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item" href=""> Home </a>
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link"> Docs </a>
+            <a class="navbar-item has-text-weight-medium is-size-5 p-3" href=""> Home </a>
+            <div class="navbar-item has-dropdown is-hoverable is-size-5 p-3">
+                <a class="navbar-link has-text-weight-medium"> Docs </a>
                 <div class="navbar-dropdown is-boxed is-background-grey-lighter is-light">
                     <a class="navbar-item is-background-grey-lighter is-color-grey-darker "
                        href="https://bulma.io/documentation/overview/start/"> Overview </a>
@@ -87,15 +87,24 @@
 
 <!--Main content -->
 <main>
-    <section class="hero is-primary is-fullheight">
+    <section class="hero is-white is-fullheight">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">
-                    Welcome to WhatTheSite
-                </h1>
-                <h2 class="subtitle">
-                    Empowering SMEs with Government Support.
-                </h2>
+                <div class="columns is-vcentered">
+                    <div class="column">
+                      <h1 class="title is-size-1 mb-2">
+                        Welcome to WhatTheSite
+                      </h1>
+                      <h2 class="subtitle has-text-weight-semibold ">
+                        Empowering SMEs with Government Support.
+                      </h2>
+                    </div>
+                    <div class="">
+                      <figure class="image is-pulled-right">
+                        <img style="height: 430px;width: 600px;" src="../static/assets/Team-vector(No-background).png" alt="Placeholder image"> <!--https://www.freepik.com/free-vector/forming-team-leadership-concept-illustration_35294599.htm#page=2&position=7&from_view=author&uuid=0c67beaf-5df4-41c7-b319-aa65cfbb1a38-->
+                      </figure>
+                    </div>
+                  </div>
             </div>
         </div>
     </section>
