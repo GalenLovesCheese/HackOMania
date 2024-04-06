@@ -7,12 +7,12 @@
     <title>Home | WhatTheSite</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"
     />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bulma.css') }}"
-    />
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="is-background-light is-light">
-<nav class="navbar is-light is-background-grey-lighter" style="height:80px;">
+<nav class="navbar is-light is-background-grey-lighter">
     <div class="navbar-brand">
         <a class="navbar-item" href="">
             <h1 class="title ml-2 mr-5 is-color-grey-darker">WhatTheSite</h1>
@@ -27,9 +27,9 @@
 
     <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item has-text-weight-medium is-size-5 p-3" href=""> Home </a>
-            <div class="navbar-item has-dropdown is-hoverable is-size-5 p-3">
-                <a class="navbar-link has-text-weight-medium"> Docs </a>
+            <a class="navbar-item" href=""> Home </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link"> Docs </a>
                 <div class="navbar-dropdown is-boxed is-background-grey-lighter is-light">
                     <a class="navbar-item is-background-grey-lighter is-color-grey-darker "
                         href="https://bulma.io/documentation/overview/start/"> Overview </a>
@@ -65,6 +65,7 @@
         </div>
     </div>
 </nav>
+
 
 
 <!--Main content -->
