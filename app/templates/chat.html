@@ -9,17 +9,16 @@
     />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bulma.css') }}"
     />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<nav class="navbar is-dark">
+<nav class="navbar is-light is-background-grey-lighter">
     <div class="navbar-brand">
         <a class="navbar-item" href="">
-            <h1 class="title ml-2">WhatTheSite</h1>
-
-
+            <h1 class="title ml-2 is-color-grey-darker">WhatTheSite</h1>
         </a>
-        <div class="navbar-burger js-burger" data-target="navbarExampleTransparentExample">
+        <div class="navbar-burger js-burger is-light" data-target="navbarExampleTransparentExample">
             <span></span>
             <span></span>
             <span></span>
@@ -32,16 +31,23 @@
             <a class="navbar-item" href=""> Home </a>
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link"> Docs </a>
-                <div class="navbar-dropdown is-boxed">
-                    <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
-                    <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                <div class="navbar-dropdown is-boxed is-background-grey-lighter is-light">
+                    <a class="navbar-item is-background-grey-lighter is-color-grey-darker "
+                       href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                    <a class="navbar-item is-background-grey-lighter is-color-grey-darker"
+                       href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
                     <hr class="navbar-divider">
-                    <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
-                    <a class="navbar-item is-selected" href="https://bulma.io/documentation/layout/container/">
+                    <a class="navbar-item is-background-grey-lighter is-color-grey-darker"
+                       href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                    <a class="navbar-item is-background-grey-lighter is-color-grey-darker"
+                       href="https://bulma.io/documentation/layout/container/">
                         Layout </a>
-                    <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
-                    <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
-                    <a class="navbar-item" href="https://bulma.io/documentation/components/breadcrumb/"> Components </a>
+                    <a class="navbar-item is-background-grey-lighter is-color-grey-darker"
+                       href="https://bulma.io/documentation/form/general/"> Form </a>
+                    <a class="navbar-item is-background-grey-lighter is-color-grey-darker"
+                       href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                    <a class="navbar-item is-background-grey-lighter is-color-grey-darker"
+                       href="https://bulma.io/documentation/components/breadcrumb/"> Components </a>
                 </div>
             </div>
         </div>
@@ -79,36 +85,100 @@
     </div>
 </nav>
 
-<section>
-    <nav class="panel m-5">
-        <p class="panel-heading">Chat with Thomas Wong</p>
+<!--Main content -->
+<main>
+    <section class="hero is-light is-background-white is-fullheight">
+        <div class="panel m-5 ">
+            <p class="panel-heading is-background-grey-dark">Chat with Thomas Wong</p>
 
-        <p class="panel-tabs">
-            <a class="is-active">All</a>
-            <a>Public</a>
-            <a>Private</a>
-            <a>Sources</a>
-            <a>Forks</a>
-        </p>
+            <p class="panel-tabs mb-3">
+                <a class="is-active">Govtech</a>
+                <a>CSIT</a>
+                <a>DSTA</a>
+            </p>
 
-
-        <!--        <div class="panel-block">-->
-        <!--            <button class="button is-link is-outlined is-fullwidth">-->
-        <!--                Reset all filters-->
-        <!--            </button>-->
-        <!--        </div>-->
-
-        <div class="control has-icons-right">
-            <label>
-                <input class="input" type="text" placeholder="Message Thomas Wong..."/>
-                <span class="icon is-small is-right">
-                    <i class="fa fa-paper-plane"
-                    ></i>
-                </span>
-            </label>
+            <div id="container" class="container">
+                <div id="chat" class="chat">
+                    <div id="messages" class="messages"></div>
+                    <div class="control has-icons-right">
+                        <label>
+                            <input id="messageInput" class="input is-background-grey-dark" placeholder="Message Thomas Wong..."/>
+                            <button id="sendMessageButton" class="icon is-small is-right">
+                                <i class="fa fa-paper-plane"></i>
+                            </button>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-</section>
+    </section>
+</main>
+
+<!--Footer-->
+<footer class="footer is-background-grey-lighter">
+    <div class="container mb-6">
+        <div class="footer-main">
+            <div class="columns">
+                <div class="column">
+                    <h4 class="title is-4 is-color-grey-darker">About us </h4>
+                    <p class="is-color-grey">
+                        Empowering SMEs with Government Support. Your One-Stop Destination for Grants and Programs.
+                    </p>
+                </div>
+                <div class="column">
+                    <h4 class="title is-4 is-color-grey-darker">Getting Started</h4>
+                    <p class="">
+                    <p><a href="#">What to Expect?</a>
+                    <p>
+                    <p><a href="#">Why us?</a>
+                    <p><a href="#">How to Use?</a>
+                    <p></p>
+                </div>
+                <div class="column">
+                    <h4 class="title is-4 is-color-grey-darker">Contact Us</h4>
+                    <p>
+                        <strong class="is-color-grey">WhatTheSite Support</strong>
+                        <a href="mailto:support@whatthesite.gov.sg">support@whatthesite.gov.sg</a>
+                    <p class="is-color-grey">Mon-Fri, 10am - 4pm</p>
+                </div>
+
+                <div class="column">
+                    <h4 class="title is-4 is-color-grey-darker">Follow Us</h4>
+
+                    <div class="buttons">
+                        <a class="button is-medium is-facebook is-inverted is-black-social">
+                  <span class="icon">
+                    <i class="fa fa-facebook fa-lg"></i>
+                  </span>
+                        </a>
+                        <a class="button is-medium is-instagram is-inverted is-black-social">
+                  <span class="icon">
+                    <i class="fa fa-instagram fa-lg"></i>
+                  </span>
+                        </a>
+                        <a class="button is-medium is-twitter is-inverted is-black-social">
+                  <span class="icon">
+                    <i class="fa fa-twitter fa-lg"></i>
+                  </span>
+                        </a>
+                        <a class="button is-medium is-youtube is-inverted is-black-social">
+                  <span class="icon">
+                    <i class="fa fa-youtube fa-lg"></i>
+                  </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="has-text-centered">
+        <p class="mt-4 is-color-grey">
+            Copyright © 2024
+            <a href="https://github.com/GalenLovesCheese/HackOMania">WhatTheSite</a>
+        </p>
+    </div>
+</footer>
 <script src="{{url_for('static', filename='script.js')}}"></script>
 </body>
 </html>
