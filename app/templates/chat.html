@@ -28,7 +28,7 @@
 
     <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item is-size-5 has-text-weight-semibold px-5" href=""> Home </a>
+            <a class="navbar-item is-size-5 has-text-weight-semibold px-5" href="/"> Home </a>
             <div class="navbar-item has-dropdown is-hoverable px-5">
                 <a class="navbar-link is-size-5 has-text-weight-semibold"> Docs </a>
                 <div class="navbar-dropdown is-boxed is-background-grey-lighter is-light">
@@ -68,27 +68,31 @@
 </nav>
 
 <!--Main content -->
-<main class="is-align-content-center">
+<main class="is-align-content-center is-light is-transparent">
     <section class="hero is-light is-background-white is-fullheight" style="align-items: center">
         <div class="panel m-6" style="width: 80vw;">
             <p class="panel-heading is-background-grey-dark">Chat with Thomas Wong</p>
 
-            <p class="panel-tabs mb-3">
-                <a class="is-active">Govtech</a>
-                <a>CSIT</a>
-                <a>DSTA</a>
-            </p>
+            <div class="is-background-light">
+                <p class="panel-tabs mb-3">
+                    <a class="is-active">Govtech</a>
+                    <a>CSIT</a>
+                    <a>DSTA</a>
+                </p>
 
-            <div id="container" class="container">
-                <div id="chat" class="chat">
-                    <div id="messages" class="messages" style="min-height: 65vh; max-height: 65vh; overflow-y: auto;"></div>
-                    <div class="control has-icons-right">
-                        <label>
-                            <input id="messageInput" class="input is-background-grey-dark" placeholder="Message Thomas Wong..."/>
-                            <button id="sendMessageButton" class="icon is-small is-right">
-                                <i class="fa fa-paper-plane"></i>
-                            </button>
-                        </label>
+                <div id="container" class="container">
+                    <div id="chat" class="chat">
+                        <div id="messages" class="messages"
+                             style="min-height: 65vh; max-height: 65vh; overflow-y: auto;"></div>
+                        <div class="control has-icons-right">
+                            <label>
+                                <input id="messageInput" class="input is-background-grey-dark"
+                                       placeholder="Message Thomas Wong..."/>
+                                <button id="sendMessageButton" class="icon is-small is-right">
+                                    <i class="fa fa-paper-plane"></i>
+                                </button>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
