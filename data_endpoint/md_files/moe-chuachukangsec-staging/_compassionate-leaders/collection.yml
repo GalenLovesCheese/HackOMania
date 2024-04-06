@@ -1,0 +1,10 @@
+collections:
+  compassionate-leaders:
+    output: true
+    order:
+      - Learning for life Programme/.keep
+      - Learning for life Programme/Learning for Life Programme.md
+      - Learning for life Programme/Leadership Course.md
+      - Learning for life Programme/Leadership Events.md
+      - CCE Curriculum/.keep
+      - MOE OBS Programme.md

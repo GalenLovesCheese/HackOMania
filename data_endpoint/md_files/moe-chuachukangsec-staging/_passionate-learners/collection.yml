@@ -1,0 +1,17 @@
+collections:
+  passionate-learners:
+    output: true
+    order:
+      - "Departments/Applied Learning Programme: Robotics & Automation.md"
+      - Departments/Aesthetics.md
+      - Departments/English Language and Literature.md
+      - Departments/Humanities.md
+      - Departments/Information and Communication Technology.md
+      - Departments/Mathematics.md
+      - Departments/Mother Tongue Languages.md
+      - Departments/Physical Education.md
+      - Departments/Science.md
+      - Departments/Student Management.md
+      - Departments/Student Welfare.md
+      - Departments/.keep
+      - Students' Achievements/.keep

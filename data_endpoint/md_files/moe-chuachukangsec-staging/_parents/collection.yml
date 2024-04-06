@@ -1,0 +1,11 @@
+collections:
+  parents:
+    output: true
+    order:
+      - 2024 Sec 1 Parents Briefing.md
+      - 2024 Sec 3 Parents Briefing.md
+      - 2024 Sec 4&5  Parents Briefing.md
+      - 2024 Sec 1 Class Allocation.md
+      - CCKSS Global Connect Overseas Programme.md
+      - Direct School Admission/.keep
+      - Direct School Admission/Direct School Admission Application 2023.md

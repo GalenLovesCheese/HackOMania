@@ -1,0 +1,15 @@
+collections:
+  caring-community-in-cckss:
+    output: true
+    order:
+      - National Education/National Education Messages.md
+      - National Education/National Day.md
+      - National Education/Cultural Activities.md
+      - National Education/International Friendship Day.md
+      - National Education/Total Defence Day.md
+      - National Education/.keep
+      - Parent Support Group.md
+      - Alumni/Alumni.md
+      - Alumni/Alumni’s Achievements.md
+      - Alumni/.keep
+      - Transition through Secondary School.md

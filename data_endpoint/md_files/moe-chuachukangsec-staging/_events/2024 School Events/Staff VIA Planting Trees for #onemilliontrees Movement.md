@@ -1,0 +1,8 @@
+---
+title: "Staff VIA Planting Trees for #onemilliontrees Movement"
+permalink: /events/2024-school-events/staff-via-planting-trees/
+variant: tiptap
+description: ""
+third_nav_title: 2024 School Events
+---
+<p>The OneMillionTrees movement, which is a key pillar of the Singapore Green Plan 2030, aims to restore nature back into our city through the planting of a million more trees across Singapore over the next decade. To help in the transformation of Singapore into a City in Nature, we decided to tap on our Staff VIA to support this important initiative and plant trees along Teck Whye Walk, just outside our school compound.</p><p>We were blessed to have with us Minister Gan Kim Yong to grace our Staff VIA where our staff, parents and student leaders planted about 51 trees to contribute to the One Million Trees Movement. Planting 20 saplings from a batch nurtured and cared for by teachers and students from the school’s Environmental Science Club, we were also glad to have partnered with NParks who supplied us with 31 more saplings.</p><p>Taking our changkols and watering cans, everyone happily planted their saplings under the watchful eyes of the NParks officers who taught us the right way to plant them. We cannot wait till the newest members of the CCKSian family grow up!</p><div class="iframe-wrapper"><iframe height="389" width="640" allowfullscreen="true" frameborder="0" src="https://docs.google.com/presentation/d/e/2PACX-1vR8iSw9C_LKVFvAF81p8IJAecAUgW4cuEe-sVTKxzgn3oMVzoak-osAd2bC5Mrf6g/embed?start=true&amp;loop=true&amp;delayms=3000"></iframe></div><p></p>

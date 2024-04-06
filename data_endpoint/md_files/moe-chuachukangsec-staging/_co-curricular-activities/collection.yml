@@ -1,0 +1,30 @@
+collections:
+  co-curricular-activities:
+    output: true
+    order:
+      - Clubs and Societies/Art & Crafts.md
+      - Clubs and Societies/.keep
+      - Clubs and Societies/Environmental Science.md
+      - Clubs and Societies/Infocomm Technology.md
+      - Clubs and Societies/Robotics.md
+      - Performing Arts/Band.md
+      - Performing Arts/Choir.md
+      - Performing Arts/Chinese Orchestra.md
+      - Performing Arts/English Drama.md
+      - Performing Arts/Modern Dance.md
+      - Performing Arts/.keep
+      - Sports and Games/.keep
+      - Sports and Games/Badminton.md
+      - Sports and Games/Basketball (Boys Only).md
+      - Sports and Games/Floorball (Girls Only).md
+      - Sports and Games/Football (Boys Only).md
+      - Sports and Games/Netball (Girls Only).md
+      - Sports and Games/Sepak Takraw (Boys Only).md
+      - Sports and Games/Swimming.md
+      - Sports and Games/Wushu.md
+      - Uniformed Groups/.keep
+      - Uniformed Groups/Girl Guides (Girls Only).md
+      - Uniformed Groups/National Cadet Corps Sea (Boys Only).md
+      - Uniformed Groups/National Police Cadet Corps.md
+      - Uniformed Groups/Sea Scouts (Boys Only).md
+      - Uniformed Groups/St John Brigade.md

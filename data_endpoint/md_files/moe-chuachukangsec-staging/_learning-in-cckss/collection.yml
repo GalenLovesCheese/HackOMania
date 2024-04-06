@@ -1,0 +1,16 @@
+collections:
+  learning-in-cckss:
+    output: true
+    order:
+      - "Applied Learning Programme: Technology in Sustainability.md"
+      - Departments/.keep
+      - Departments/Craft and Technology.md
+      - Departments/English.md
+      - Departments/Humanities.md
+      - Departments/Mathematics.md
+      - Departments/Mother Tongue.md
+      - Departments/Physical Education.md
+      - Departments/Science.md
+      - Personalised Digital Learning Programme.md
+      - Teaching and Learning Model/Four Critical Questions.md
+      - Teaching and Learning Model/.keep

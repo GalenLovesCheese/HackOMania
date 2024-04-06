@@ -1,0 +1,20 @@
+collections:
+  about-us:
+    output: true
+    order:
+      - Principal's Foreword.md
+      - School History/.keep
+      - School History/History.md
+      - School History/Chua Chu Kang Secondary School.md
+      - School History/Teck Whye Secondary School.md
+      - School Information/.keep
+      - School Information/School Vision, Mission and Values.md
+      - School Information/School song.md
+      - School Information/School Crest.md
+      - School Information/Student Code of Conduct.md
+      - School Textbooks & School Uniform.md
+      - School Achievements/.keep
+      - School Achievements/In the News.md
+      - School Highlights.md
+      - School Organisation.md
+      - Contact Us.md

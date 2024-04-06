@@ -1,0 +1,8 @@
+collections:
+  leadership-events:
+    output: true
+    order:
+      - Secondary 1 Orientation.md
+      - Student Leaderdship Forum.md
+      - Prefect Camp.md
+      - Student Leadership Camp.md

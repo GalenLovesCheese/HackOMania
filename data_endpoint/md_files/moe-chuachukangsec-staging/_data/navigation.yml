@@ -1,0 +1,21 @@
+logo: /images/2023 Design/Logo/20230410 schoollogo.png
+links:
+  - title: About Us
+    collection: about-us
+  - title: Learning in CCKSS
+    collection: learning-in-cckss
+  - title: The Co-Curriculum at CCKSS
+    url: /the-co-curriculum-at-cckss/learning-for-life-programme/learning-for-life-programme/
+    sublinks:
+      - title: Learning For Life Programme
+        url: /the-co-curriculum-at-cckss/learning-for-life-programme/learning-for-life-programme/
+      - title: Co-Curricular Activities
+        url: /cca/clubs-and-societies/art-and-crafts/
+      - title: Character and Citizenship Education (CCE)
+        url: /the-co-curriculum-at-cckss/cce-curriculum/cyberwellness/
+      - title: MOE OBS
+        url: /the-co-curriculum-at-cckss/moe-obs/moe-obs-programme/
+      - title: Education Career Guidance
+        url: /the-co-curriculum-at-cckss/education-career-guidance
+  - title: Caring Community In Cckss
+    collection: caring-community-in-cckss

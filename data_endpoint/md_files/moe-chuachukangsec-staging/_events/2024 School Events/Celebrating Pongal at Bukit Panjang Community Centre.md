@@ -1,0 +1,8 @@
+---
+title: Celebrating Pongal at Bukit Panjang Community Centre
+permalink: /events/2024-school-events/celebrating-pongal-bpcc/
+variant: tiptap
+description: ""
+third_nav_title: 2024 School Events
+---
+<p>Celebrated by the Tamil community, Pongal is a harvest festival held in thanksgiving for a bountiful harvest. During the festivities, a mixture of boiled sweet rice is prepared and is derived from the Tamil word pongu, which means to “boil over”. Signifying prosperity and abundance when the pot of milk boils over, the dish is then shared amongst family members and visitors.</p><p>Our CCKSians and teachers from the Tamil Language Unit joined in the Pongal festivities at the Bukit Panjang Community Centre with residents and Minister Vivian Balakrishnan. Soaking in the festivities, our CCKSians enjoyed themselves as they introduced traditional games to the minister, the community, and their non-Indian friends who joined them for the celebrations. The highlight of the event was when Minister Vivian Balakrishnan presided over the boiling of rice in the Pongal pot, which was witnessed by our CCKSians. It was certainly a fun and joyous event and we hope for prosperity and abundance for all our staff, parents, students and the community!</p><p></p><p></p><div class="iframe-wrapper"><iframe height="389" width="640" allowfullscreen="true" frameborder="0" src="https://docs.google.com/presentation/d/e/2PACX-1vTkyjED04k68tCe9OI88pusPvLYbDHg9EnTujpeaQqfeErGR3Qf1_ne5FxiTd0xMQ/embed?start=true&amp;loop=true&amp;delayms=3000"></iframe></div><p></p>
