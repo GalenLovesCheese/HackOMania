@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request, jsonify
 from pymongo import MongoClient
 
 def create_app():
@@ -17,5 +17,19 @@ app = Flask(__name__)
 client = MongoClient('localhost', 27017) 
 
 db = client.flask_db
-todos = db.todos
+
+db.RecordsDB.insertMany([
+    {
+        "name": "Galen",
+        "message": "What the freak is going on?"
+    },
+    {
+        "name": "Alice",
+        "message": "I'm confused too."
+    },
+    {
+        "name": "Bob",
+        "message": "Let's figure it out together."
+    }
+])
 
