@@ -8,3 +8,4 @@ def index():
 @bp.route("/chat.html")
 def chat():
     return render_template("chat.html")
+
