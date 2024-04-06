@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<nav class="navbar is-light">
+<nav class="navbar is-dark">
     <div class="navbar-brand">
         <a class="navbar-item" href="">
             <h1 class="title ml-2">WhatTheSite</h1>
@@ -31,9 +31,9 @@
         <div class="navbar-start">
             <a class="navbar-item" href=""> Home </a>
             <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link"> Features </a>
+                <a class="navbar-link"> Docs </a>
                 <div class="navbar-dropdown is-boxed">
-                    <a class="navbar-item" href="/chat.html"> Chat </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
                     <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
                     <hr class="navbar-divider">
                     <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
@@ -79,6 +79,39 @@
     </div>
 </nav>
 
+<section>
+    <nav class="panel m-5">
+        <p class="panel-heading">Chat with Thomas Wong</p>
 
+        <p class="panel-tabs">
+            <a class="is-active">All</a>
+            <a>Public</a>
+            <a>Private</a>
+            <a>Sources</a>
+            <a>Forks</a>
+        </p>
+
+
+
+
+
+<!--        <div class="panel-block">-->
+<!--            <button class="button is-link is-outlined is-fullwidth">-->
+<!--                Reset all filters-->
+<!--            </button>-->
+<!--        </div>-->
+
+        <div class="control has-icons-right">
+            <label>
+                <input class="input" type="text" placeholder="Message Thomas Wong..." />
+                <span class="icon is-small is-right">
+                    <i class="fa fa-paper-plane"
+                    ></i>
+                </span>
+            </label>
+        </div>
+    </nav>
+</section>
+<script src="{{url_for('static', filename='script.js')}}"></script>
 </body>
 </html>
