@@ -47,10 +47,10 @@ function addChat(input, response) {
     let userDiv = document.createElement("div");
     userDiv.id = "user";
     userDiv.innerHTML = `
-    <article class="message m-2 mr-5  is-primary" >
+    <article class="message m-5  is-primary" >
         <div class="message-body" style="display: flex; align-items: center; background-color: lightgray">
-            <img src="https://cdn-icons-png.freepik.com/512/64/64572.png?ga=GA1.1.334113719.1712415648&" class="avatar" alt="User's profile picture" style="width: 25px; height: 25px; margin-right: 10px;">
-            <span class="subtitle is-6" style="flex: 1;">${input}</span>
+            <img src="https://cdn-icons-png.freepik.com/512/64/64572.png?ga=GA1.1.334113719.1712415648&" class="avatar" alt="User's profile picture" style="width: 30px; height: 30px; margin-right: 10px;">
+            <span class="subtitle is-6" style="flex: 1;"><strong>You</strong><br>${input}</span>
         </div>
     </article>
 `;
@@ -60,10 +60,10 @@ function addChat(input, response) {
     botDiv.id = "bot";
 
     botDiv.innerHTML = `
-    <article class="message m-2 ml-5  is-primary" >
+    <article class="message m-5  is-link" >
         <div class="message-body" style="display: flex; align-items: center; background-color: lightgray">
-            <div class="subtitle is-6" style="flex: 1;" >${response}</div>
-            <img src="https://cdn-icons-png.freepik.com/512/64/64572.png?ga=GA1.1.334113719.1712415648&" class="avatar" alt="Bot's profile picture" style="width: 25px; height: 25px; margin-left: 10px;">
+            <img src="../static/assets/chatbot.png" class="avatar" alt="Bot's profile picture" style="width: 30px; height: 30px; margin-right: 10px; border-radius: 50%">
+            <span class="subtitle is-6" style="flex: 1;"><strong>Thomas</strong><br>${response}</span>
         </div>
     </article>
 `;
