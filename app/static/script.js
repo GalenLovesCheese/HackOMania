@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function output(input) {
     let response;
 
-    response = "Balls"
+    response = "How can I help you?"
 
     addChat(input, response);
 }
@@ -45,14 +45,33 @@ function addChat(input, response) {
     let userDiv = document.createElement("div");
     userDiv.id = "user";
     userDiv.innerHTML = `
-    <article class="message m-2">
-        <div class="message-body" style="display: flex; align-items: center;">
+    <article class="message m-2 mr-5  is-primary" >
+        <div class="message-body" style="display: flex; align-items: center; background-color: lightgray">
             <img src="https://cdn-icons-png.freepik.com/512/64/64572.png?ga=GA1.1.334113719.1712415648&" class="avatar" alt="User's profile picture" style="width: 25px; height: 25px; margin-right: 10px;">
-            <span style="flex: 1;">${input}</span>
+            <span class="subtitle is-6" style="flex: 1;">${input}</span>
         </div>
-    </article>`;
+    </article>
+`;
 
     messagesContainer.appendChild(userDiv);
+
+    let botDiv = document.createElement("div");
+
+    botDiv.id = "bot";
+
+    botDiv.innerHTML = `
+    <article class="message m-2 ml-5  is-primary" >
+        <div class="message-body" style="display: flex; align-items: center; background-color: lightgray">
+
+            <div class="subtitle is-6" style="flex: 1;" >${response}</div>
+            <img src="https://cdn-icons-png.freepik.com/512/64/64572.png?ga=GA1.1.334113719.1712415648&" class="avatar" alt="Bot's profile picture" style="width: 25px; height: 25px; margin-left: 10px;">
+            
+        </div>
+    </article>
+`;
+
+
+    messagesContainer.appendChild(botDiv);
 
     messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 }
