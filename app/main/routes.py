@@ -9,3 +9,6 @@ def index():
 def chat():
     return render_template("chat.html")
 
+@bp.route("/dashboard.html")
+def dashboard():
+    return render_template("dashboard.html")
