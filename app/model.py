@@ -63,7 +63,7 @@ def prompt(query, target):
     chat = [
         {
             "role": "user",
-            "content": f"You are a helpful AI assistant that tries your best to provide helpful and through responses. You can use the provided context to answer the questions. The question is: \"{query}\". The context related to this question is as follows: {source_information}"
+            "content": f"You are a helpful AI assistant that tries your best to provide helpful and through responses. You can use the provided context to answer the questions. The question is: \"{query}\". The context related to this question is as follows: {source_information}. Extract the core details and provide a informative answer. Exclude any unnecessary information."
         }
     ]
 
