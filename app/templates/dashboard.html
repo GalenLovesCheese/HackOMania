@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | WhatTheSite</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico">
+</head>
+<body class="is-background-light is-transparent">
+<nav class="navbar is-light is-transparent">
+    <div class="ml-2 navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="../static/assets/logo.png" class="mr-1" style="max-width: 50px; max-height: 50px;" alt="Logo">
+            <h1 class="title ml-2 mr-5 is-color-grey-darker">WhatTheSite</h1>
+        </a>
+        <div class="navbar-burger js-burger is-light" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item is-size-5 has-text-weight-semibold px-5" href="/"> Home </a>
+            <div class="navbar-item has-dropdown is-hoverable px-5">
+                <a class="navbar-link is-size-5 has-text-weight-semibold" href="chat.html"> Chat </a>
+                <div class="navbar-dropdown is-boxed is-background-grey-lighter is-light">
+                    <a class="navbar-item is-background-grey-lighter is-color-grey-darker "
+                       href="chat.html"> Overview </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item is-background-grey-lighter is-color-grey-darker"
+                       href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                </div>
+            </div>
+            <a class="navbar-item is-size-5 has-text-weight-semibold px-5" href="dashboard.html"> Dashboard </a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="bd-tw-button button mr-5 p-4 px-4 is-link"
+                           href="mailto:support@whatthesite.gov.sg">
+                            <span> Contact </span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--Main content -->
+<main>
+    <section class="hero is-white is-fullheight">
+        <h1 class="title is-size-1 m-6" style="text-align: center">Website Prompt Statistics</h1>
+            <div class="container">
+                <div class="columns">
+                    <div class="column m-5">
+                        <figure class="image is-pulled-left">
+                            <img style="max-height: 430px;max-width: 600px;"
+                                 src="https://www.researchgate.net/publication/221611955/figure/fig1/AS:305603122614285@1449872870217/Top-10-viruses-This-graph-compares-the-percentages-of-infected-client-hosts-to-the-union.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="column m-5">
+                        <h1 class="title is-size-2 mb-2">
+                            Top 10 Frequent Prompts
+                        </h1>
+                        <div class="ml-4"><ol>
+                            <li>How can a small SME apply for a foreign pass permit?</li>
+                        </ol></div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+
+<!--Footer-->
+
+<footer class="footer is-background-grey-lighter">
+    <div class="container mb-6">
+        <div class="footer-main">
+            <div class="columns">
+                <div class="column">
+                    <h4 class="title is-4 is-color-grey-darker">About us </h4>
+                    <p class="is-color-grey">
+                        Empowering SMEs with Government Support. Your One-Stop Destination for Grants and Programs.
+                    </p>
+                </div>
+                <div class="column">
+                    <h4 class="title is-4 is-color-grey-darker">Getting Started</h4>
+                    <p class="">
+                    <p><a href="#">What to Expect?</a>
+                    <p>
+                    <p><a href="#">Why us?</a>
+                    <p><a href="#">How to Use?</a>
+                    <p></p>
+                </div>
+                <div class="column">
+                    <h4 class="title is-4 is-color-grey-darker">Contact Us</h4>
+                    <p>
+                        <strong class="is-color-grey">WhatTheSite Support</strong>
+                        <a href="mailto:support@whatthesite.gov.sg">support@whatthesite.gov.sg</a>
+                    <p class="is-color-grey">Mon-Fri, 10am - 4pm</p>
+                </div>
+
+                <div class="column">
+                    <h4 class="title is-4 is-color-grey-darker">Follow Us</h4>
+
+                    <div class="buttons">
+                        <a class="button is-medium is-facebook is-inverted is-black-social">
+                  <span class="icon">
+                    <i class="fa fa-facebook fa-lg"></i>
+                  </span>
+                        </a>
+                        <a class="button is-medium is-instagram is-inverted is-black-social">
+                  <span class="icon">
+                    <i class="fa fa-instagram fa-lg"></i>
+                  </span>
+                        </a>
+                        <a class="button is-medium is-twitter is-inverted is-black-social">
+                  <span class="icon">
+                    <i class="fa fa-twitter fa-lg"></i>
+                  </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="has-text-centered">
+        <p class="mt-4 is-color-grey">
+            Copyright © 2024
+            <a href="https://github.com/GalenLovesCheese/HackOMania">WhatTheSite</a>
+        </p>
+    </div>
+</footer>
+<script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
