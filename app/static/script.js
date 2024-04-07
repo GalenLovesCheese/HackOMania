@@ -1,3 +1,5 @@
+URL = "http://127.0.0.1:5000"
+
 // Navbar burger menu toggle
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Chat
-
 document.addEventListener("DOMContentLoaded", () => {
     onLoad()
     const inputField = document.getElementById("messageInput");
@@ -32,22 +33,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // TODO: Add response logic
-function output(input) {
-    let response;
+async function output(input) {
+    const decoder = new TextDecoder();
+    const response = fetch(URL + "/api/generate?query=" + input + "&target=embeddings.ovtech-gobusiness-main");
 
-    response = "How can I help you?"
-
-    addChat(input, response);
+    addChat(input, decoder, response);
 }
 
 chatLog = [];
 
 function onLoad() {
-    addChat("Hello!", "Welcome to WTS\' chatbot! How can I help you?");
-
+    addChat("Hello!", null, "Welcome to WTS\' chatbot! How can I help you?");
 }
 
-function addChat(input, response) {
+async function addChat(input, decoder, response) {
     const messagesContainer = document.getElementById("messages");
 
     let userDiv = document.createElement("div");
@@ -65,8 +64,7 @@ function addChat(input, response) {
     let botDiv = document.createElement("div");
     botDiv.id = "bot";
 
-    setTimeout(() => {
-
+    if (!decoder) {
         botDiv.innerHTML = `
         <article class="message m-5  is-link"  style="animation: fadeIn 2s;">
             <div class="message-body" style="display: flex; align-items: center; background-color: lightgray">
@@ -76,9 +74,29 @@ function addChat(input, response) {
         </article>
     `;
         messagesContainer.appendChild(botDiv);
-    }, 1000);
+    } else {
+        botDiv.innerHTML = `
+        <article class="message m-5  is-link"  style="animation: fadeIn 2s;">
+            <div class="message-body" style="display: flex; align-items: center; background-color: lightgray">
+                <img src="../static/assets/chatbot.png" class="avatar" alt="Bot's profile picture" style="width: 30px; height: 30px; margin-right: 10px; border-radius: 50%">
+                <span class="subtitle is-6" style="flex: 1;" id="bot-output"><strong>Thomas</strong><br>Thinking...</span>
+            </div>
+        </article>
+    `;
+        messagesContainer.appendChild(botDiv);
 
-    chatLog.push({user: input, bot: response});
+        response = await response;
+
+        let bot_output = document.getElementById("bot-output");
+        let result = "";
+
+        for await (const chunk of response.body) {
+            result += decoder.decode(chunk, { stream: true });
+            bot_output.innerText = result;
+        }
+    }
+
+    chatLog.push({ user: input, bot: response });
     console.log(chatLog)
 
     messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
